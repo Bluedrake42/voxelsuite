@@ -15,7 +15,7 @@ import java.io.IOException;
 public class TextureToolsTest {
     // helper - test compression for a specific image
     private void compress(String image) throws IOException {
-        BufferedImage img = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\Texture Compression\\" + image + ".png"));
+        BufferedImage img = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\Texture Compression\\" + image + ".png"));
         // create hashmap
         TIntObjectHashMap<int[]> pixels = new TIntObjectHashMap<int[]>();
         for (int x = 0, width = img.getWidth(); x < width; x++) {

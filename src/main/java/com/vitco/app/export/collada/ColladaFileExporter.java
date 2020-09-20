@@ -394,8 +394,8 @@ public class ColladaFileExporter extends ProgressReporter {
 
         // basic information
         xmlFile.resetTopNode("asset");
-        xmlFile.addTextContent("contributor/author", "VoxelShop User");
-        xmlFile.addTextContent("contributor/authoring_tool", "VoxelShop V" + VitcoSettings.VERSION_ID);
+        xmlFile.addTextContent("contributor/author", "VoxelSuite User");
+        xmlFile.addTextContent("contributor/authoring_tool", "VoxelSuite V" + VitcoSettings.VERSION_ID);
         String now = DateTools.now("yyyy-MM-dd'T'HH:mm:ss");
         xmlFile.addTextContent("created", now);
         xmlFile.addTextContent("modified", now);

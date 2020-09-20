@@ -70,7 +70,7 @@ public final class VitcoSettings {
     public static final String TRAVIS_DATE;
     public static final Font SPLASH_SCREEN_SMALL_FONT = new Font("Tohama", Font.PLAIN, 12);
 
-    public static final String TITLE_STRING = "VoxelShop - Alpha Version (" + VERSION_ID + ")";
+    public static final String TITLE_STRING = "VoxelSuite - Alpha Version (" + VERSION_ID + ")";
     public static final Font TITLE_FONT = new Font("Tohama", Font.PLAIN, 14);
     public static final Color TITLE_COLOR = new Color(200, 200, 200);
 

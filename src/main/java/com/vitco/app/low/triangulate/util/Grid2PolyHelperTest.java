@@ -52,7 +52,7 @@ public class Grid2PolyHelperTest {
     // uses input image and creates output image with created polygon
     @Test
     public void testNew() throws IOException {
-        BufferedImage imgIn = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\grid2poly\\file1.png"));
+        BufferedImage imgIn = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\grid2poly\\file1.png"));
         boolean[][] data = new boolean[imgIn.getWidth()][imgIn.getHeight()];
         for (int x = 0; x < imgIn.getWidth(); x++) {
             for (int y = 0; y < imgIn.getHeight(); y++) {
@@ -122,7 +122,7 @@ public class Grid2PolyHelperTest {
         }
         gr.dispose();
 
-        ImageIO.write(img, "png", new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\grid2poly\\file1_out.png"));
+        ImageIO.write(img, "png", new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\grid2poly\\file1_out.png"));
 
     }
 

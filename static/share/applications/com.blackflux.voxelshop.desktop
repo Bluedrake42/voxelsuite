@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=VoxelShop
-GenericName=VoxelShop 3D Voxel-based Painting Software
+Name=VoxelSuite
+GenericName=VoxelSuite 3D Voxel-based Painting Software
 Comment=3D voxel modeling, rendering and export
 Keywords=3d;cg;modeling;painting;sculpting;texturing;voxel,rendering;game design;
-Exec=voxelshop %f
-Icon=/usr/local/share/pixmaps/voxelshop.png
+Exec=VoxelSuite %f
+Icon=/usr/local/share/pixmaps/VoxelSuite.png
 Terminal=false
 Type=Application
 Categories=Graphics;3DGraphics;

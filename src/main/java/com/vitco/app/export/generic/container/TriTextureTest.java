@@ -17,7 +17,7 @@ public class TriTextureTest {
     @Test
     public void compressionTest() throws Exception {
         // load image that we want to compress
-        BufferedImage input = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\Texture Compression\\sample25.png"));
+        BufferedImage input = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\Texture Compression\\sample25.png"));
         // create hashmap with pixels
         TIntObjectHashMap<int[]> pixels = new TIntObjectHashMap<int[]>();
         for (int x = 0, width = input.getWidth(); x < width; x++) {
@@ -84,7 +84,7 @@ public class TriTextureTest {
 
         // write the file
         try {
-            ImageIO.write(img2, "png", new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\Texture Compression\\sample25_compressed.png"));
+            ImageIO.write(img2, "png", new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\Texture Compression\\sample25_compressed.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

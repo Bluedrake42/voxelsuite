@@ -14,9 +14,9 @@ public class ImageComparatorTest {
 
     // helper - get position search result for two images (with optional restriction)
     private int[] getResult(String child, String parent, int[] restriction) throws IOException {
-        BufferedImage haystack = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\SubImage Search\\" +
+        BufferedImage haystack = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\SubImage Search\\" +
                 parent));
-        BufferedImage needle = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\SubImage Search\\" +
+        BufferedImage needle = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\SubImage Search\\" +
                 child));
         ImageComparator haystackComp = new ImageComparator(haystack);
         ImageComparator needleComp = new ImageComparator(needle);
@@ -28,8 +28,8 @@ public class ImageComparatorTest {
     public void testGetPosition() throws Exception {
         // test runtime
 
-        BufferedImage haystack = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\SubImage Search\\haystack_small.png"));
-        BufferedImage needle = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelShop\\Test Files\\SubImage Search\\needle.png"));
+        BufferedImage haystack = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\SubImage Search\\haystack_small.png"));
+        BufferedImage needle = ImageIO.read(new File("C:\\Users\\flux\\Dropbox\\java\\VoxelSuite\\Test Files\\SubImage Search\\needle.png"));
 
         ImageComparator parent = new ImageComparator(haystack);
         ImageComparator child = new ImageComparator(needle);

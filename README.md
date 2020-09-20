@@ -35,6 +35,14 @@ the main repo `develop` branch, *referencing the associated issue(s)*.
 
 Make sure you use a different branch for each change set.
 
+clean
+resources
+compile
+copy resources
+copy dependencies
+jar
+
+
 ### IntelliJ
 - Click Open and select PS4k Folder (within the folder you selected as root)
 - Ensure the JDK8 is selected under File > Project Structure > Project

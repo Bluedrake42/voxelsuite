@@ -377,8 +377,8 @@ public class MainMenuLogic extends MenuLogicPrototype implements MenuLogicInterf
         dialog.addButton("Cancel", JOptionPane.CANCEL_OPTION);
 
         // add help links
-        dialog.addLink(console, "Export to Blender", "https://github.com/simlu/voxelshop/wiki/Export-for-Blender");
-        dialog.addLink(console, "Export to Unity", "https://github.com/simlu/voxelshop/wiki/Export-for-Unity");
+        dialog.addLink(console, "Export to Blender", "https://github.com/simlu/VoxelSuite/wiki/Export-for-Blender");
+        dialog.addLink(console, "Export to Unity", "https://github.com/simlu/VoxelSuite/wiki/Export-for-Unity");
         dialog.addLink(console, "Export to Stonehearth", "https://discourse.stonehearth.net/t/5289");
 
         // add file select

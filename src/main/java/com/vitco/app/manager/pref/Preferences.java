@@ -125,7 +125,7 @@ public class Preferences implements PreferencesInterface {
     }
 
     private static String getUserDataDirectory() {
-        return System.getProperty("user.home") + File.separator + ".voxelshop" + File.separator;
+        return System.getProperty("user.home") + File.separator + ".VoxelSuite" + File.separator;
     }
 
     // var % setter

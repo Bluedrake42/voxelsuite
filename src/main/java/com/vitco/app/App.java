@@ -71,13 +71,7 @@ public class App {
         }
 
         // the JIDE license
-        SaveResourceLoader saveResourceLoader = new SaveResourceLoader("resource/jidelicense.txt");
-        if (!saveResourceLoader.error) {
-            String[] jidelicense = saveResourceLoader.asLines();
-            if (jidelicense.length == 3) {
-                com.jidesoft.utils.Lm.verifyLicense(jidelicense[0], jidelicense[1], jidelicense[2]);
-            }
-        }
+        com.jidesoft.utils.Lm.verifyLicense("Bluedrake42 Limited Company", "VoxelSuite", "1swDPQFVGldqwiuzv6XtOvMbm9tNgaA");
 
         // check if we are in debug mode
         if ((args.length > 0) && args[0].equals("debug")) {

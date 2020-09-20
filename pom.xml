@@ -7,7 +7,7 @@
     <groupId>com.blackflux.ps4k</groupId>
     <artifactId>voxelshop</artifactId>
     <packaging>jar</packaging>
-    <version>start</version>
+    <version>1.0.0</version>
 
     <name>VoxelShop</name>
     <url>https://github.com/simlu/voxelshop</url>
@@ -44,7 +44,7 @@
                 <version>2.5.3</version>
                 <configuration>
                     <descriptor>pack.xml</descriptor>
-                    <finalName>build/voxelshop</finalName>
+                    <finalName>build/${project.name}</finalName>
                 </configuration>
                 <executions>
                     <execution>
@@ -188,6 +188,47 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
+                <version>1.5.1</version>
+                <executions>
+                    <execution>
+                        <id>l4j-clui</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>launch4j</goal>
+                        </goals>
+                        <configuration>
+                            <headerType>gui</headerType>
+                            <jar>${project.build.directory}/${project.name}-${project.version}</jar>
+                            <outfile>${project.build.directory}/${project.name}.exe</outfile>
+                            <downloadUrl>http://java.com/download</downloadUrl>
+                            <classPath>
+                                <mainClass>com.vitco.app.App</mainClass>
+                                <addDependencies>true</addDependencies>
+                                <preCp>anything</preCp>
+                            </classPath>
+                            <jre>
+                                <minVerhelsion>1.8.0</minVerhelsion>
+                                <jdkPreference>preferJre</jdkPreference>
+                            </jre>
+                            <versionInfo>
+                                <fileVersion>1.0.0.0</fileVersion>
+                                <txtFileVersion>${project.version}</txtFileVersion>
+                                <fileDescription>${project.name}</fileDescription>
+                                <copyright>2020 DrakelingLabs</copyright>
+                                <productVersion>1.0.0.0</productVersion>
+                                <txtProductVersion>1.0.0.0</txtProductVersion>
+                                <productName>${project.name}</productName>
+                                <companyName>DrakelingLabs</companyName>
+                                <internalName>${project.name}</internalName>
+                                <originalFilename>${project.name}.exe</originalFilename>
+                            </versionInfo>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

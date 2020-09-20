@@ -3,7 +3,7 @@
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for?
-This is the GIT repository for [VoxelShop](https://blackflux.com/node/11).
+This is the GIT repository for VoxelSuite, a voxel editing application built on the [VoxelShop](https://blackflux.com/node/11) codebase.
 
 Documentation on how to use the program can be found [here](https://simlu.github.io/voxelshop).
 
